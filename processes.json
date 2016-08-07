@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "name": "hubot",
+            "exec_interpreter" : "node",
+            "script": ".\\node_modules\\coffee-script\\bin\\coffee",
+            "args": ".\\node_modules\\hubot\\bin\\hubot",
+            "merge_logs": true,
+            "max_restarts": 20,
+            "max_memory_restart": "200M",
+            "exec_mode": "forkmode",
+            "error_file" : "/logs/hubot.stderr.log",
+            "out_file" : "/logs/hubot.stdout.log",
+        }
+    ]
+}
